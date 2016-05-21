@@ -1,0 +1,135 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: "Open Sans","lucida grande","Segoe UI",arial,verdana,"lucida sans unicode",tahoma,sans-serif;
+    font-size: 13px;
+}
+#liveSupport_trigger{
+	position: fixed;
+	right: -5px;
+    bottom: -5px;
+	background: url(../images/Live-Chat.png) no-repeat center;
+    display: block;
+    width: 271px;
+    height: 151px;
+	z-index: 999999999999;
+	cursor: pointer;
+}
+
+
+#liveSupport{
+	display:none;
+	background:#F6F9FC;
+	width: 320px;
+    color: #3d464d;
+    border-left: 1px solid #e5e5e5;
+    position: fixed;
+    right: 0;
+    height: 100%;	
+	top: 0;
+	z-index: 999999999999;
+}
+#liveSupport .header, #liveSupport .footer{	
+	padding: 10px;
+	background: #fff;
+    line-height: 25px;
+}
+#liveSupport .header{	
+    border-bottom: 1px solid #e5e5e5;
+}
+#liveSupport .footer{	
+	border-top: 1px solid #e5e5e5;
+    position: absolute;
+    bottom: 0px;
+    width: 320px;
+}
+#liveSupport .header .header_options{
+	color: #007EE5;
+    float: right;
+	cursor: pointer;
+}
+#liveSupport .footer .footer_options{
+	float: right;
+    background: linear-gradient(#168eef, #007ee5);
+    border: 1px solid #0c6ebe;
+    color: #FFF;
+    width: 45px;
+    text-align: center;
+}
+#liveSupport #liveSupportMessage{
+	border: 1px solid #e5e5e5; 
+    width: 235px;
+}
+#liveSupport .liveSupport_converstaion{
+}
+#liveSupport .liveSupport_converstaion ul{
+	margin: 0 auto;
+    padding: 0;
+	overflow: auto;
+}
+
+#liveSupport .liveSupport_converstaion ul::-webkit-scrollbar {
+    width: 5px;
+}
+#liveSupport .liveSupport_converstaion ul::-webkit-scrollbar-track {
+	 -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+#liveSupport .liveSupport_converstaion ul::-webkit-scrollbar-thumb {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+#liveSupport .liveSupport_converstaion ul li{
+	list-style-type: none;
+    overflow: hidden;
+    padding: 5px 10px 5px 10px;
+}
+#liveSupport .liveSupport_converstaion ul li .chat_u_status{
+	width: 10px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+}
+#liveSupport .liveSupport_converstaion ul li .chat_u_status_offline{
+	background: #FF8A80;
+}
+#liveSupport .liveSupport_converstaion ul li .chat_u_status_online{
+	background: #16CC61;
+}
+#liveSupport .liveSupport_converstaion ul li .chat_u_message{
+    display: block;
+    width: 260px;
+    float: left;
+    border-radius: 5px;
+    height: auto !important;
+    font-size: 13px;
+}
+#liveSupport .liveSupport_converstaion ul li.me .chat_u_message{
+    float: right;
+}
+#liveSupport .liveSupport_converstaion ul li.you .chat_u_message{
+    float: left;
+}
+#liveSupport .liveSupport_converstaion ul li .chat_u_message .chat_u_message_time{
+	display: block;
+    line-height: 20px;
+    font-size: 11px;
+    color: #c0cbd6;
+	text-align: left;
+}
+#liveSupport .liveSupport_converstaion ul li .chat_avatar{
+    height: 25px;
+	position: relative;
+}
+#liveSupport .liveSupport_converstaion ul li.me .chat_avatar{
+	float: left;
+}
+#liveSupport .liveSupport_converstaion ul li.you .chat_avatar{
+	float: right;
+}
+#liveSupport .liveSupport_converstaion ul li .chat_avatar img{
+	height: 100%;
+    border-radius: 50%;
+}
